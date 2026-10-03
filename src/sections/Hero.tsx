@@ -179,13 +179,13 @@ export function Hero() {
                 Explore Our Services
               </a>
               <a
-                href="https://wa.me/?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20discuss%20my%20business%20growth"
+                href="https://wa.me/917567464057?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20discuss%20my%20business%20growth"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden xl:inline-flex items-center gap-2 h-[50px] lg:h-[54px] px-6 rounded-full bg-[#25D366] text-white text-sm font-medium hover:bg-[#20bd5a] transition-colors"
+                className="hidden xl:inline-flex items-center gap-2 h-[50px] lg:h-[54px] px-6 rounded-full bg-[#25D366] text-white text-sm font-medium hover:bg-[#20bd5a] transition-colors shadow-lg"
               >
                 <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
-                WhatsApp
+                WhatsApp (+91 75674 64057)
               </a>
             </motion.div>
 

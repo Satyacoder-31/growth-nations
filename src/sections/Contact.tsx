@@ -59,12 +59,28 @@ export function Contact() {
   const submit = (e: React.FormEvent) => {
     e.preventDefault()
     setSent(true)
-    setTimeout(() => setSent(false), 5000)
+    setTimeout(() => setSent(false), 6000)
 
-    const text = encodeURIComponent(
-      `Hi Growth Nations!%0A%0AName: ${form.name}%0ACompany: ${form.company || 'N/A'}%0AService Required: ${form.serviceRequired}%0ABudget Range: ${form.budget}%0APhone: ${form.phone}%0AEmail: ${form.email}%0AMessage: ${form.message}`
-    )
-    window.open(`https://wa.me/?text=${text}`, '_blank')
+    const message = [
+      `*Growth Consultation Request — Growth Nations*`,
+      ``,
+      `👤 *Name:* ${form.name}`,
+      `📞 *Phone / WhatsApp:* ${form.phone}`,
+      `✉️ *Email:* ${form.email}`,
+      `🏢 *Company / Brand:* ${form.company || 'N/A'}`,
+      `🎯 *Service Required:* ${form.serviceRequired || 'Consultation'}`,
+      `💰 *Budget Range:* ${form.budget || 'Custom'}`,
+      ``,
+      `💬 *Project Goals & Message:*`,
+      `${form.message}`,
+    ].join('\n')
+
+    const waUrl = `https://wa.me/917567464057?text=${encodeURIComponent(message)}`
+    
+    // Redirect directly to WhatsApp
+    setTimeout(() => {
+      window.location.href = waUrl
+    }, 300)
   }
 
   return (
@@ -117,6 +133,20 @@ export function Contact() {
 
             {/* Quick Contact Cards */}
             <div className="space-y-3 pt-2">
+              <a
+                href="https://wa.me/917567464057?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20request%20a%20growth%20consultation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3.5 text-sm text-white/80 hover:text-white transition-colors group"
+              >
+                <span className="w-9 h-9 rounded-full bg-[#25D366]/20 border border-[#25D366]/30 grid place-items-center text-[#25D366] shrink-0 group-hover:scale-105 transition-transform">
+                  💬
+                </span>
+                <div>
+                  <span className="font-semibold text-white block">+91 75674 64057</span>
+                  <span className="text-xs text-white/50">Direct WhatsApp &amp; Phone Consultation</span>
+                </div>
+              </a>
               <div className="flex items-center gap-3.5 text-sm text-white/70">
                 <span className="w-9 h-9 rounded-full bg-white/10 border border-white/10 grid place-items-center text-white shrink-0">
                   ✉
@@ -138,12 +168,12 @@ export function Contact() {
             </div>
 
             <a
-              href="https://wa.me/?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20request%20a%20growth%20consultation"
+              href="https://wa.me/917567464057?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20request%20a%20growth%20consultation"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 h-12 px-8 rounded-full bg-[#25D366] text-white text-sm font-semibold hover:bg-[#20bd5a] transition-colors shadow-lg"
             >
-              Start Consultation on WhatsApp ↗
+              Start Consultation on WhatsApp (+91 75674 64057) ↗
             </a>
           </div>
 
@@ -196,7 +226,7 @@ export function Contact() {
                   required
                   value={form.phone}
                   onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                  placeholder="+91 98765 43210"
+                  placeholder="+91 75674 64057"
                   className="w-full h-[48px] px-4 rounded-xl bg-white/[0.05] border border-white/10 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-white/25 focus:bg-white/[0.08]"
                 />
               </label>
@@ -282,7 +312,7 @@ export function Contact() {
 
             {sent && (
               <div className="rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-sm px-4 py-3 text-center">
-                ✓ Consultation request initiated! WhatsApp window launched for immediate team response.
+                ✓ Consultation request submitted! Redirecting you to WhatsApp (+91 75674 64057) for immediate consultation...
               </div>
             )}
 

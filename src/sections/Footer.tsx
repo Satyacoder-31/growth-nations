@@ -55,12 +55,12 @@ export function Footer() {
               Get Started ↗
             </a>
             <a
-              href="https://wa.me/?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20discuss%20our%20growth%20strategy"
+              href="https://wa.me/917567464057?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20discuss%20our%20growth%20strategy"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 h-12 px-6 rounded-full border border-white/15 bg-white/[0.06] text-white text-sm font-semibold hover:bg-white/10 transition-colors"
+              className="inline-flex items-center gap-2 h-12 px-6 rounded-full border border-[#25D366]/40 bg-[#25D366]/15 text-white text-sm font-semibold hover:bg-[#25D366]/25 transition-colors"
             >
-              WhatsApp Us
+              WhatsApp (+91 75674 64057)
             </a>
           </div>
         </div>
@@ -154,7 +154,7 @@ export function Footer() {
                 ['Instagram', 'https://instagram.com'],
                 ['LinkedIn', 'https://linkedin.com'],
                 ['YouTube', 'https://youtube.com'],
-                ['WhatsApp', 'https://wa.me/?text=Hi%20Growth%20Nations'],
+                ['WhatsApp', 'https://wa.me/917567464057?text=Hi%20Growth%20Nations'],
               ].map(([label, href]) => (
                 <li key={label}>
                   <a
@@ -168,9 +168,22 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-            <div className="mt-6 pt-4 border-t border-white/[0.06] text-xs text-white/40">
-              <p>Email Inquiry:</p>
-              <p className="text-white/70 font-mono mt-1">hello@growthnations.in</p>
+            <div className="mt-6 pt-4 border-t border-white/[0.06] text-xs text-white/40 space-y-2">
+              <div>
+                <p>Phone &amp; WhatsApp:</p>
+                <a
+                  href="https://wa.me/917567464057"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/80 font-mono hover:text-[#25D366] transition-colors inline-block mt-0.5"
+                >
+                  +91 75674 64057
+                </a>
+              </div>
+              <div>
+                <p>Email Inquiry:</p>
+                <p className="text-white/70 font-mono mt-0.5">hello@growthnations.in</p>
+              </div>
             </div>
           </div>
         </div>

@@ -206,10 +206,10 @@ export function Navigation() {
                   Get Started ↗
                 </a>
                 <a
-                  href="https://wa.me/?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20scale%20my%20business"
+                  href="https://wa.me/917567464057?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20scale%20my%20business"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="h-[52px] rounded-full border border-white/15 text-white grid place-items-center text-sm font-medium bg-white/[0.06] backdrop-blur hover:bg-white/10 transition-colors"
+                  className="h-[52px] rounded-full border border-[#25D366]/40 text-white grid place-items-center text-sm font-medium bg-[#25D366]/15 backdrop-blur hover:bg-[#25D366]/25 transition-colors"
                 >
                   WhatsApp ↗
                 </a>

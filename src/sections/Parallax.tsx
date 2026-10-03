@@ -130,12 +130,12 @@ export function Parallax() {
               Start Your Growth Journey ↗
             </button>
             <a
-              href="https://wa.me/?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20scale%20my%20business"
+              href="https://wa.me/917567464057?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20scale%20my%20business"
               target="_blank"
               rel="noopener noreferrer"
-              className="h-12 px-6 rounded-full border border-white/15 bg-white/[0.06] text-white text-sm font-semibold flex items-center justify-center gap-2 hover:bg-white/10 transition-colors"
+              className="h-12 px-6 rounded-full border border-[#25D366]/40 bg-[#25D366]/15 text-white text-sm font-semibold flex items-center justify-center gap-2 hover:bg-[#25D366]/25 transition-colors"
             >
-              Talk to Growth Nations
+              Talk on WhatsApp
             </a>
           </div>
         </div>
@@ -184,12 +184,12 @@ export function Parallax() {
                 Start Your Growth Journey ↗
               </button>
               <a
-                href="https://wa.me/?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20scale%20my%20business"
+                href="https://wa.me/917567464057?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20scale%20my%20business"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-[52px] px-7 rounded-full border border-white/15 bg-white/[0.06] text-white text-sm font-semibold flex items-center gap-2 hover:bg-white/10 transition-colors"
+                className="h-[52px] px-7 rounded-full border border-[#25D366]/40 bg-[#25D366]/15 text-white text-sm font-semibold flex items-center gap-2 hover:bg-[#25D366]/25 transition-colors"
               >
-                Talk to Growth Nations
+                Talk on WhatsApp
               </a>
             </div>
             <div className="mt-8 inline-flex items-center gap-2 px-5 py-2 rounded-full border border-white/10 text-[11px] tracking-widest text-white/40 uppercase">

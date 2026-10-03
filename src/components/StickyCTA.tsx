@@ -20,10 +20,10 @@ export function StickyCTA() {
         </div>
         <div className="flex gap-2 shrink-0">
           <a
-            href="https://wa.me/?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20discuss%20my%20business%20growth"
+            href="https://wa.me/917567464057?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20discuss%20my%20business%20growth"
             target="_blank"
             rel="noopener noreferrer"
-            className="h-10 px-3.5 rounded-full border border-white/15 bg-white/10 text-white text-xs font-semibold grid place-items-center backdrop-blur hover:bg-white/15 transition-colors"
+            className="h-10 px-3.5 rounded-full border border-[#25D366]/40 bg-[#25D366]/20 text-white text-xs font-semibold grid place-items-center backdrop-blur hover:bg-[#25D366]/30 transition-colors"
           >
             WhatsApp
           </a>
@@ -38,14 +38,14 @@ export function StickyCTA() {
 
       {/* Desktop floating WhatsApp */}
       <a
-        href="https://wa.me/?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20discuss%20my%20business%20growth"
+        href="https://wa.me/917567464057?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20discuss%20my%20business%20growth"
         target="_blank"
         rel="noopener noreferrer"
         className="hidden lg:inline-flex fixed bottom-6 right-6 z-40 items-center gap-2.5 h-12 px-6 rounded-full bg-[#25D366] text-white text-sm font-semibold shadow-[0_10px_30px_rgba(0,0,0,0.4)] hover:bg-[#20bd5a] transition-all hover:scale-[1.02]"
-        aria-label="Chat with Growth Nations on WhatsApp"
+        aria-label="Chat with Growth Nations on WhatsApp (+91 75674 64057)"
       >
         <span className="w-2.5 h-2.5 rounded-full bg-white animate-pulse" />
-        Talk to Growth Nations
+        WhatsApp (+91 75674 64057)
       </a>
     </>
   )

@@ -96,6 +96,7 @@ function App() {
               description:
                 'Growth Nations helps ambitious businesses grow through performance marketing, lead generation, technology, automation, and conversion-focused digital experiences.',
               url: 'https://growthnations.in',
+              telephone: '+91 75674 64057',
               priceRange: '₹3,000 - Custom',
               areaServed: 'Global',
               hasOfferCatalog: {
