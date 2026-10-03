@@ -96,7 +96,17 @@ function App() {
               description:
                 'Growth Nations helps ambitious businesses grow through performance marketing, lead generation, technology, automation, and conversion-focused digital experiences.',
               url: 'https://growthnations.in',
+              logo: 'https://growthnations.in/logo.jpg',
+              image: 'https://growthnations.in/logo.jpg',
               telephone: '+91 75674 64057',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: '6th Floor, Premaldeep Square, Amli',
+                addressLocality: 'Silvassa',
+                postalCode: '396230',
+                addressRegion: 'Dadra and Nagar Haveli',
+                addressCountry: 'IN',
+              },
               priceRange: '₹3,000 - Custom',
               areaServed: 'Global',
               hasOfferCatalog: {

@@ -119,9 +119,11 @@ export function Contact() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
                 <div className="rounded-2xl bg-black/60 backdrop-blur-xl border border-white/15 p-4 flex items-center gap-3.5">
-                  <div className="w-10 h-10 rounded-full accent-gradient flex items-center justify-center text-xs font-bold text-white shrink-0 shadow-sm">
-                    GN
-                  </div>
+                  <img
+                    src="/gn-mark.png"
+                    alt="Growth Nations Logo"
+                    className="w-11 h-11 rounded-full object-contain bg-white p-1 shrink-0 shadow-sm border border-white/20"
+                  />
                   <div>
                     <p className="text-sm font-semibold text-white">Consultation Response</p>
                     <p className="text-xs text-white/60">Within 2 hours • 10am–8pm IST</p>
@@ -133,37 +135,105 @@ export function Contact() {
 
             {/* Quick Contact Cards */}
             <div className="space-y-3 pt-2">
-              <a
-                href="https://wa.me/917567464057?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20request%20a%20growth%20consultation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3.5 text-sm text-white/80 hover:text-white transition-colors group"
-              >
-                <span className="w-9 h-9 rounded-full bg-[#25D366]/20 border border-[#25D366]/30 grid place-items-center text-[#25D366] shrink-0 group-hover:scale-105 transition-transform">
-                  💬
-                </span>
-                <div>
-                  <span className="font-semibold text-white block">+91 75674 64057</span>
-                  <span className="text-xs text-white/50">Direct WhatsApp &amp; Phone Consultation</span>
+              {/* Phone & WhatsApp */}
+              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-3.5 space-y-2.5">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] tracking-[0.16em] uppercase text-white/40 font-semibold">
+                    DIRECT CONTACT &amp; CONSULTATION
+                  </span>
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                 </div>
-              </a>
-              <div className="flex items-center gap-3.5 text-sm text-white/70">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  <a
+                    href="tel:+917567464057"
+                    className="flex items-center gap-2.5 px-3 py-2 rounded-xl bg-white/[0.05] border border-white/10 hover:bg-white/10 text-white transition-colors group"
+                  >
+                    <span className="w-7 h-7 rounded-full bg-white/10 grid place-items-center text-xs">📞</span>
+                    <div>
+                      <p className="text-[11px] text-white/50">Call Directly</p>
+                      <p className="text-xs font-semibold font-mono text-white">+91 75674 64057</p>
+                    </div>
+                  </a>
+                  <a
+                    href="https://wa.me/917567464057?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20request%20a%20growth%20consultation"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2.5 px-3 py-2 rounded-xl bg-[#25D366]/15 border border-[#25D366]/30 hover:bg-[#25D366]/25 text-white transition-colors group"
+                  >
+                    <span className="w-7 h-7 rounded-full bg-[#25D366] text-white grid place-items-center text-xs">💬</span>
+                    <div>
+                      <p className="text-[11px] text-emerald-300">WhatsApp Chat</p>
+                      <p className="text-xs font-semibold font-mono text-white">+91 75674 64057</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              {/* Office Address */}
+              <div className="flex items-start gap-3.5 text-sm text-white/70 p-3 rounded-2xl bg-white/[0.02] border border-white/10">
+                <span className="w-9 h-9 rounded-full bg-white/10 border border-white/10 grid place-items-center text-white shrink-0 mt-0.5">
+                  📍
+                </span>
+                <div className="flex-1">
+                  <span className="font-semibold text-white block">Corporate Office:</span>
+                  <p className="text-white/80 leading-relaxed text-xs sm:text-sm mt-0.5">
+                    Growth Nations, 6th Floor, Premaldeep Square, Amli, Silvassa – 396230
+                  </p>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Premaldeep+Square,+Amli,+Silvassa+-+396230"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs text-[#4E85BF] hover:text-white mt-1.5 font-medium transition-colors"
+                  >
+                    Open in Google Maps ↗
+                  </a>
+                </div>
+              </div>
+
+              {/* Email */}
+              <div className="flex items-center gap-3.5 text-sm text-white/70 px-3 py-2">
                 <span className="w-9 h-9 rounded-full bg-white/10 border border-white/10 grid place-items-center text-white shrink-0">
                   ✉
                 </span>
-                <span>hello@growthnations.in</span>
+                <div>
+                  <span className="text-xs text-white/50 block">Email Us</span>
+                  <a href="mailto:hello@growthnations.in" className="text-white hover:underline">
+                    hello@growthnations.in
+                  </a>
+                </div>
               </div>
-              <div className="flex items-center gap-3.5 text-sm text-white/70">
-                <span className="w-9 h-9 rounded-full bg-white/10 border border-white/10 grid place-items-center text-white shrink-0">
-                  ◷
-                </span>
-                <span>Priority Review • Mon–Sat 10:00 AM – 8:00 PM IST</span>
+            </div>
+
+            {/* Embedded Google Maps Card */}
+            <div className="rounded-[24px] overflow-hidden border border-white/10 bg-[hsl(var(--surface))] p-3.5 shadow-xl space-y-2.5">
+              <div className="flex items-center justify-between px-1">
+                <div className="flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#4E85BF] animate-pulse" />
+                  <span className="text-xs font-semibold text-white tracking-wide">
+                    Premaldeep Square, Silvassa
+                  </span>
+                </div>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Premaldeep+Square,+Amli,+Silvassa+-+396230"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[11px] text-[#4E85BF] hover:text-white transition-colors font-medium inline-flex items-center gap-1"
+                >
+                  Get Directions ↗
+                </a>
               </div>
-              <div className="flex items-center gap-3.5 text-sm text-white/70">
-                <span className="w-9 h-9 rounded-full bg-white/10 border border-white/10 grid place-items-center text-white shrink-0">
-                  ◎
-                </span>
-                <span>Global Digital Studio • growthnations.in</span>
+              <div className="rounded-xl overflow-hidden h-[210px] w-full border border-white/10 relative">
+                <iframe
+                  title="Growth Nations Location - Premaldeep Square, Silvassa"
+                  src="https://maps.google.com/maps?q=Premaldeep+Square%2C+Amli%2C+Silvassa+-+396230&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full h-full"
+                />
               </div>
             </div>
 
@@ -171,7 +241,7 @@ export function Contact() {
               href="https://wa.me/917567464057?text=Hi%20Growth%20Nations%20-%20I%20want%20to%20request%20a%20growth%20consultation"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 h-12 px-8 rounded-full bg-[#25D366] text-white text-sm font-semibold hover:bg-[#20bd5a] transition-colors shadow-lg"
+              className="inline-flex items-center justify-center gap-2 w-full h-12 px-8 rounded-full bg-[#25D366] text-white text-sm font-semibold hover:bg-[#20bd5a] transition-colors shadow-lg"
             >
               Start Consultation on WhatsApp (+91 75674 64057) ↗
             </a>

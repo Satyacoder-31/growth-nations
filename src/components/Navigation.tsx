@@ -59,12 +59,14 @@ export function Navigation() {
             e.preventDefault()
             scrollTo('#home')
           }}
-          className="flex items-center gap-2 pr-2"
+          className="flex items-center gap-2.5 pr-2"
           aria-label="Growth Nations home"
         >
-          <div className="w-8 h-8 rounded-full accent-gradient flex items-center justify-center text-[11px] font-extrabold tracking-wider text-white shrink-0 shadow-sm">
-            GN
-          </div>
+          <img
+            src="/gn-mark.png"
+            alt="Growth Nations"
+            className="w-8 h-8 rounded-full object-contain bg-white p-0.5 shadow-sm border border-white/20 shrink-0"
+          />
           <span className="font-semibold text-xs tracking-wider text-white uppercase hidden xl:inline">
             Growth Nations
           </span>
@@ -109,9 +111,11 @@ export function Navigation() {
           className="flex items-center gap-2.5"
           aria-label="Growth Nations home"
         >
-          <div className="w-9 h-9 rounded-full accent-gradient flex items-center justify-center text-xs font-bold tracking-wider text-white">
-            GN
-          </div>
+          <img
+            src="/gn-mark.png"
+            alt="Growth Nations"
+            className="w-9 h-9 rounded-full object-contain bg-white p-0.5 shadow-sm border border-white/20 shrink-0"
+          />
           <span className="font-semibold text-sm tracking-wider text-white">Growth Nations</span>
         </a>
         <button
@@ -144,9 +148,11 @@ export function Navigation() {
               style={{ paddingTop: 'max(14px, env(safe-area-inset-top))' }}
             >
               <div className="flex items-center gap-2.5">
-                <div className="w-9 h-9 rounded-full accent-gradient grid place-items-center text-xs font-bold tracking-wider text-white">
-                  GN
-                </div>
+                <img
+                  src="/gn-mark.png"
+                  alt="Growth Nations"
+                  className="w-9 h-9 rounded-full object-contain bg-white p-0.5 shadow-sm border border-white/20 shrink-0"
+                />
                 <span className="font-semibold text-sm text-white tracking-wider">Growth Nations</span>
               </div>
               <button

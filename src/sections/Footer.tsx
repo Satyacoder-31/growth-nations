@@ -69,11 +69,16 @@ export function Footer() {
         <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand Column (spans 2 on lg) */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-full accent-gradient flex items-center justify-center text-xs font-bold text-white shadow-sm">
-                GN
+            <div className="flex items-center gap-3">
+              <img
+                src="/logo-clean.png"
+                alt="Growth Nations - Digital Marketing Agency"
+                className="h-12 w-auto object-contain bg-white rounded-xl p-1.5 shadow-md border border-white/20"
+              />
+              <div>
+                <span className="font-display text-2xl tracking-tight text-white block">Growth Nations</span>
+                <span className="text-[11px] tracking-wider text-white/50 uppercase">Digital Marketing Agency</span>
               </div>
-              <span className="font-display text-2xl tracking-tight text-white">Growth Nations</span>
             </div>
             <p className="text-sm leading-relaxed text-white/60 max-w-[360px]">
               Digital growth, technology, and performance marketing solutions for ambitious businesses.
@@ -81,6 +86,25 @@ export function Footer() {
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/25">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               <span className="text-xs font-semibold text-emerald-300">Accepting New Client Partners</span>
+            </div>
+
+            {/* Office Address */}
+            <div className="pt-2 text-xs text-white/60 space-y-1 border-t border-white/[0.08] max-w-[380px]">
+              <p className="text-[10px] tracking-[0.18em] font-semibold text-white/40 uppercase">
+                OFFICE LOCATION
+              </p>
+              <p className="text-white/80 leading-relaxed text-xs">
+                Growth Nations, 6th Floor, Premaldeep Square,<br />
+                Amli, Silvassa – 396230
+              </p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Premaldeep+Square,+Amli,+Silvassa+-+396230"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs text-[#4E85BF] hover:text-white pt-0.5 transition-colors font-medium"
+              >
+                📍 View on Google Maps ↗
+              </a>
             </div>
           </div>
 
@@ -168,21 +192,36 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-            <div className="mt-6 pt-4 border-t border-white/[0.06] text-xs text-white/40 space-y-2">
+            <div className="mt-6 pt-4 border-t border-white/[0.06] text-xs text-white/40 space-y-2.5">
               <div>
-                <p>Phone &amp; WhatsApp:</p>
+                <p className="text-[10px] tracking-wider uppercase text-white/40">Direct Phone:</p>
                 <a
-                  href="https://wa.me/917567464057"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white/80 font-mono hover:text-[#25D366] transition-colors inline-block mt-0.5"
+                  href="tel:+917567464057"
+                  className="text-white/90 font-mono hover:text-[#4E85BF] transition-colors inline-block mt-0.5"
                 >
                   +91 75674 64057
                 </a>
               </div>
               <div>
-                <p>Email Inquiry:</p>
-                <p className="text-white/70 font-mono mt-0.5">hello@growthnations.in</p>
+                <p className="text-[10px] tracking-wider uppercase text-white/40">WhatsApp Support:</p>
+                <a
+                  href="https://wa.me/917567464057"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/90 font-mono hover:text-[#25D366] transition-colors inline-flex items-center gap-1.5 mt-0.5"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] animate-pulse" />
+                  +91 75674 64057
+                </a>
+              </div>
+              <div>
+                <p className="text-[10px] tracking-wider uppercase text-white/40">Email Inquiry:</p>
+                <a
+                  href="mailto:hello@growthnations.in"
+                  className="text-white/70 font-mono mt-0.5 hover:text-white transition-colors block"
+                >
+                  hello@growthnations.in
+                </a>
               </div>
             </div>
           </div>
